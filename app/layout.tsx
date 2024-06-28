@@ -4,9 +4,9 @@ import { relative } from "path";
 import { Footer, Navbar } from "@/components";
 
 export const metadata: Metadata = {
-  title: "Car Rental With Drivers - Musafir Tours Travels",
+  title: "Cars On Rent With Drivers - Musafir Tours Travels Pune",
   description:
-    "The Best Tours and Travels Company In India. Services Like Car Rental With Drivers, Self-Drive Cars and Holiday Packages All Over India.",
+    "The Best Tours and Travels Company In India. Car Rental With Drivers, Self-Drive Cars On Rent, Holiday and Tourism Packages All Over India.",
 };
 
 export default function RootLayout({
