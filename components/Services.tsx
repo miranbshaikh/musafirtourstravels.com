@@ -13,7 +13,7 @@ const Services = () => {
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-black sm:text-4xl md:text-[40px]">
                 What We Offer
               </h2>
-              <p className="text-base text-body-color dark:text-dark-6">
+              <p className="text-base text-body-color dark:text-dark-6 px-9">
                 There Are A Variety Of Services In Tours and Travels Sector That We Cater To, Few Of Them Are Highlighted Below.
               </p>
             </div>
