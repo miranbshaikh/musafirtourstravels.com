@@ -75,26 +75,26 @@ export const manufacturers = [
       title: "Company",
       links: [
         { title: "About Us", url: "/aboutus" },
-        { title: "Contact Us", url: "/" },
-        { title: "Our Team", url: "/" },
-        { title: "Our Partners", url: "/" },
+        { title: "Contact Us", url: "/contactus" },
+        { title: "Our Team", url: "/ourteam" },
+        { title: "Our Partners", url: "/ourpartners" },
       ],
     },
     {
       title: "Other Links",
       links: [
-        { title: "Blogs", url: "/" },
-        { title: "Partner With Us", url: "/" },
-        { title: "Terms & Conditions", url: "/" },
-        { title: "Privacy Policy", url: "/" },
+        { title: "Blogs", url: "/blogs" },
+        { title: "Partner With Us", url: "/partnerwithus" },
+        { title: "Terms & Conditions", url: "/termsandconditions" },
+        { title: "Privacy Policy", url: "/privacypolicy" },
       ],
     },
     {
       title: "Socials",
       links: [
-        { title: "Instagram", url: "/" },
-        { title: "Facebook", url: "/" },
-        { title: "YouTube", url: "/" },
+        { title: "Instagram", url: "https://www.instagram.com/musafirtourstravels" },
+        { title: "Facebook", url: "https://www.facebook.com/MusafirToursTravelsCompany" },
+        { title: "YouTube", url: "https://www.youtube.com/@musafirtourstravels" },
       ],
     },
   ];
