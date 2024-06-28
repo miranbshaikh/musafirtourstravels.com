@@ -212,6 +212,7 @@ export default function Example() {
                 <a
                   href="tel:+918484866377"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   <span className="font-bold text-xl">+91 8484 866 377</span>
                 </a>
