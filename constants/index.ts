@@ -74,7 +74,7 @@ export const manufacturers = [
     {
       title: "Company",
       links: [
-        { title: "About Us", url: "/" },
+        { title: "About Us", url: "/aboutus" },
         { title: "Contact Us", url: "/" },
         { title: "Our Team", url: "/" },
         { title: "Our Partners", url: "/" },
