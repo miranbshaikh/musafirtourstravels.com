@@ -22,6 +22,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import Link from "next/link";
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -46,12 +47,12 @@ export default function Example() {
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link key={'Home'} href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <span className="text-2xl font-bold">Musafir</span>
             <span className="text-xs -mt-10"> Tours & Travels</span>
             {/* <img className="h-10 w-auto" src="/musafir-logo-500px.png" alt="" /> */}
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -113,19 +114,19 @@ export default function Example() {
            */}
 
 
-          <a href="#services" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link key={'Services'} href="/#services" className="text-sm font-semibold leading-6 text-gray-900">
             Services
-          </a>    
-          <a href="#features" className="text-sm font-semibold leading-6 text-gray-900">
+          </Link>    
+          <Link key={'Features'} href="/#features" className="text-sm font-semibold leading-6 text-gray-900">
             Features
-          </a>
-          <a href="#testimonials" className="text-sm font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link key={'Testimonials'} href="/#testimonials" className="text-sm font-semibold leading-6 text-gray-900">
             Testimonials
-          </a>
+          </Link>
         </PopoverGroup>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-xl leading-6 text-gray-900 font-bold">
+          <a href="tel:+918484866377" className="text-xl leading-6 text-gray-900 font-bold">
             +91 8484 866 377 {/* <span aria-hidden="true">&rarr;</span> */}
           </a>
         </div>
@@ -135,7 +136,7 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link key={'Home'} href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               {/* <img
                 className="h-8 w-auto"
@@ -144,7 +145,7 @@ export default function Example() {
               /> */}
               <span className="text-2xl font-bold">Musafir</span>
               <span className="text-xs -mt-10"> Tours & Travels</span>
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -182,28 +183,34 @@ export default function Example() {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#services"
+                <Link
+                  key={'Services'}
+                  href="/#services"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Services
-                </a>
-                <a
-                  href="#features"
+                </Link>
+                <Link
+                  key={'Features'}
+                  href="/#features"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Features
-                </a>
-                <a
-                  href="#testimonials"
+                </Link>
+                <Link
+                  key={'Testimonials'}
+                  href="/#testimonials"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Testimonials
-                </a>
+                </Link>
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="tel:+918484866377"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   <span className="font-bold text-xl">+91 8484 866 377</span>
