@@ -11,7 +11,7 @@ import {
   PopoverButton,
   PopoverGroup,
   PopoverPanel,
-} from '@headlessui/react'
+} from "@headlessui/react";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -20,34 +20,76 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+  ChatBubbleOvalLeftIcon
+} from "@heroicons/react/24/outline";
+import {
+  ChevronDownIcon,
+  PhoneIcon,
+  PlayCircleIcon,
+} from "@heroicons/react/20/solid";
 import Link from "next/link";
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
+  {
+    name: "Analytics",
+    description: "Get a better understanding of your traffic",
+    href: "#",
+    icon: ChartPieIcon,
+  },
+  {
+    name: "Engagement",
+    description: "Speak directly to your customers",
+    href: "#",
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Security",
+    description: "Your customers’ data will be safe and secure",
+    href: "#",
+    icon: FingerPrintIcon,
+  },
+  {
+    name: "Integrations",
+    description: "Connect with third-party tools",
+    href: "#",
+    icon: SquaresPlusIcon,
+  },
+  {
+    name: "Automations",
+    description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: ArrowPathIcon,
+  },
+];
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
+  { name: "Contact sales", href: "#", icon: PhoneIcon },
+];
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+     
+        <a
+          href="https://wa.me/+918484866377?text=Hi%2C%0AI%20Found%20Your%20Number%20On%20Your%20Website%2C%0AI%20Wanted%20To%20Enquire%20About%20%3A%0A"
+          className="float"
+          target="_blank"
+        >
+          <ChatBubbleOvalLeftIcon className="h-12 w-12 my-float" aria-hidden="true" />
+        </a>
+
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
         <div className="flex lg:flex-1">
-          <Link key={'Home'} href="/" className="-m-1.5 p-1.5">
+          <Link key={"Home"} href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <span className="text-2xl font-bold">Musafir</span>
             <span className="text-xs -mt-10"> Tours & Travels</span>
@@ -66,7 +108,6 @@ export default function Example() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          
           {/* 
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
@@ -113,30 +154,52 @@ export default function Example() {
           </Popover>
            */}
 
-
-          <Link key={'Services'} href="/#services" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link
+            key={"Services"}
+            href="/#services"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Services
-          </Link>    
-          <Link key={'Features'} href="/#features" className="text-sm font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link
+            key={"Features"}
+            href="/#features"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Features
           </Link>
-          <Link key={'Testimonials'} href="/#testimonials" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link
+            key={"Testimonials"}
+            href="/#testimonials"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Testimonials
           </Link>
         </PopoverGroup>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="tel:+918484866377" className="text-xl leading-6 text-gray-900 font-bold">
+          <a
+            href="tel:+918484866377"
+            className="text-xl leading-6 text-gray-900 font-bold"
+          >
             +91 8484 866 377 {/* <span aria-hidden="true">&rarr;</span> */}
           </a>
         </div>
-        
       </nav>
-      <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog
+        className="lg:hidden"
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+      >
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link key={'Home'} href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
+            <Link
+              key={"Home"}
+              href="/"
+              className="-m-1.5 p-1.5"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               <span className="sr-only">Your Company</span>
               {/* <img
                 className="h-8 w-auto"
@@ -184,7 +247,7 @@ export default function Example() {
                   )}
                 </Disclosure>
                 <Link
-                  key={'Services'}
+                  key={"Services"}
                   href="/#services"
                   onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -192,7 +255,7 @@ export default function Example() {
                   Services
                 </Link>
                 <Link
-                  key={'Features'}
+                  key={"Features"}
                   href="/#features"
                   onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -200,7 +263,7 @@ export default function Example() {
                   Features
                 </Link>
                 <Link
-                  key={'Testimonials'}
+                  key={"Testimonials"}
                   href="/#testimonials"
                   onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -222,5 +285,5 @@ export default function Example() {
         </DialogPanel>
       </Dialog>
     </header>
-  )
+  );
 }

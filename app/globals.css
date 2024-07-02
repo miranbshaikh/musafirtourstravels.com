@@ -11,6 +11,28 @@
   font-family: "Manrope", sans-serif;
 }
 
+/* WhatsApp Floating Button */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:6px;
+  margin-left: 6px;
+}
+
 /* START: General styles */
 .max-width {
   @apply max-w-[1440px] mx-auto;
